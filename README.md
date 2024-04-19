@@ -2,6 +2,8 @@ Welcome to your new dbt project!
 
 ### Using the starter project
 
+first project to implement data pipeline using dbt and snowflake
+
 Try running the following commands:
 - dbt run
 - dbt test

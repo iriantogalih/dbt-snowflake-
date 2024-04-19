@@ -1,0 +1,17 @@
+###generic test
+
+models:
+  - name: fct_orders
+    columns:
+      - name: order_key
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('stg_tpch_order')
+              field: order_key
+              severity: warn
+      - name: status_code
+        test: 
+          - accepted_values:
+              values: ['P','O','F'] 
